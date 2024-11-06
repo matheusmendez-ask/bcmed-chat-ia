@@ -8,7 +8,7 @@ registration:
 endpoints:
   
   assistants:
-      disableBuilder: true
+      disableBuilder: false
       # Use either `supportedIds` or `excludedIds` but not both
       supportedIds: ["asst_ctA16bhfJAOk81LOH2sOCcG5"]
       # excludedIds: ["asst_excludedAssistantId"]
