@@ -23,7 +23,7 @@ endpoints:
 
   custom:
     # BLUE Assistente
-    - name: "BLUE"
+    - name: "Blue"
       apiKey: "${ASSISTANTS_API_KEY}"
       baseURL: "https://api.novoassistente.com/v1"
       models:
