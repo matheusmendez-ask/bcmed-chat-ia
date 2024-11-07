@@ -23,9 +23,9 @@ endpoints:
 
   custom:
     # BLUE Assistente
-    - name: "NovoAssistente"
+    - name: "BLUE"
       apiKey: "${ASSISTANTS_API_KEY}"
-      baseURL: "https://api.novoassistente.com/v1"
+      # baseURL: "https://api.novoassistente.com/v1"
       models:
         default:
           - "gpt-4o-mini"
