@@ -26,18 +26,17 @@ endpoints:
       apiKey: "${GROQ_API_KEY}"
       baseURL: "https://api.groq.com/openai/v1/"
       models:
-        default: [
-          "llama-3.1-405b-reasoning",
-          "llama-3.1-70b-versatile",
-          "llama-3.1-8b-instant",
-          "llama3-groq-70b-8192-tool-use-preview",
-          "llama3-groq-8b-8192-tool-use-preview",
-          "llama3-70b-8192",
-          "llama3-8b-8192",
-          "mixtral-8x7b-32768",
-          "gemma-7b-it",
-          "gemma2-9b-it"
-          ]
+        default:
+          - "llama-3.1-405b-reasoning"
+          - "llama-3.1-70b-versatile"
+          - "llama-3.1-8b-instant"
+          - "llama3-groq-70b-8192-tool-use-preview"
+          - "llama3-groq-8b-8192-tool-use-preview"
+          - "llama3-70b-8192"
+          - "llama3-8b-8192"
+          - "mixtral-8x7b-32768"
+          - "gemma-7b-it"
+          - "gemma2-9b-it"
         fetch: false
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
@@ -49,19 +48,18 @@ endpoints:
       apiKey: '${HUGGINGFACE_TOKEN}'
       baseURL: 'https://api-inference.huggingface.co/v1'
       models:
-        default: [
-          "codellama/CodeLlama-34b-Instruct-hf",
-          "google/gemma-1.1-2b-it",
-          "google/gemma-1.1-7b-it",
-          "HuggingFaceH4/starchat2-15b-v0.1",
-          "HuggingFaceH4/zephyr-7b-beta",
-          "meta-llama/Meta-Llama-3-8B-Instruct",
-          "microsoft/Phi-3-mini-4k-instruct",
-          "mistralai/Mistral-7B-Instruct-v0.1",
-          "mistralai/Mistral-7B-Instruct-v0.2",
-          "mistralai/Mixtral-8x7B-Instruct-v0.1",
-          "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
-          ]
+        default:
+          - "codellama/CodeLlama-34b-Instruct-hf"
+          - "google/gemma-1.1-2b-it"
+          - "google/gemma-1.1-7b-it"
+          - "HuggingFaceH4/starchat2-15b-v0.1"
+          - "HuggingFaceH4/zephyr-7b-beta"
+          - "meta-llama/Meta-Llama-3-8B-Instruct"
+          - "microsoft/Phi-3-mini-4k-instruct"
+          - "mistralai/Mistral-7B-Instruct-v0.1"
+          - "mistralai/Mistral-7B-Instruct-v0.2"
+          - "mistralai/Mixtral-8x7B-Instruct-v0.1"
+          - "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
         fetch: true
       titleConvo: true
       titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
@@ -72,13 +70,12 @@ endpoints:
     - name: "Mistral"
       apiKey: "${MISTRAL_API_KEY}"
       baseURL: "https://api.mistral.ai/v1"
-      models: 
-        default: [
-          "mistral-tiny",
-          "mistral-small",
-          "mistral-medium",
-          "mistral-large-latest"
-          ]
+      models:
+        default:
+          - "mistral-tiny"
+          - "mistral-small" 
+          - "mistral-medium"
+          - "mistral-large-latest"
         fetch: false
       titleConvo: true
       titleMethod: "completion"
@@ -90,20 +87,19 @@ endpoints:
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
       
     # Preplexity
-    # Model list: https://docs.perplexity.ai/docs/model-cards
+    # Model list: https://docs.perplexity.ai/docs/model-cards  
     - name: "Perplexity"
       apiKey: "${PERPLEXITY_API_KEY}"
       baseURL: "https://api.perplexity.ai/"
       models:
-        default: [
-          "llama-3.1-sonar-small-128k-chat",
-          "llama-3.1-sonar-small-128k-online",
-          "llama-3.1-sonar-large-128k-chat",
-          "llama-3.1-sonar-large-128k-online",
-          "llama-3.1-sonar-huge-128k-online",
-          "llama-3.1-8b-instruct",
-          "llama-3.1-70b-instruct"
-          ]
+        default:
+          - "llama-3.1-sonar-small-128k-chat"
+          - "llama-3.1-sonar-small-128k-online"
+          - "llama-3.1-sonar-large-128k-chat"
+          - "llama-3.1-sonar-large-128k-online"
+          - "llama-3.1-sonar-huge-128k-online"
+          - "llama-3.1-8b-instruct"
+          - "llama-3.1-70b-instruct"
         fetch: false # fetching list of models is not supported
       titleConvo: true
       titleModel: "llama-3.1-sonar-small-128k-chat"
