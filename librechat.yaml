@@ -11,9 +11,11 @@ endpoints:
       disableBuilder: false
       # Use either `supportedIds` or `excludedIds` but not both
       supportedIds: ["asst_ctA16bhfJAOk81LOH2sOCcG5"]
+      pollIntervalMs: 750  # Polling interval for checking assistant updates
+      timeoutMs: 180000  # Timeout for assistant operations
       # excludedIds: ["asst_excludedAssistantId"]
       # `privateAssistants` do not work with `supportedIds` or `excludedIds`
-      # privateAssistants: false
+      privateAssistants: false
       # (optional) Models that support retrieval, will default to latest known OpenAI models that support the feature
       # retrievalModels: ["gpt-4-turbo-preview"]
       # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
