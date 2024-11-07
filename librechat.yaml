@@ -25,7 +25,7 @@ endpoints:
     # BLUE Assistente
     - name: "Blue"
       apiKey: "${ASSISTANTS_API_KEY}"
-      baseURL: "https://api.openai.com/v1/assistants/{asst_ctA16bhfJAOk81LOH2sOCcG5}"
+      baseURL: "https://api.openai.com/v1/assistants/asst_ctA16bhfJAOk81LOH2sOCcG5"
       models:
         default:
           - "gpt-4o-mini"
