@@ -23,17 +23,17 @@ endpoints:
 
   custom:
     # BLUE Assistente
-    #- name: "Blue"
-    #  apiKey: "${ASSISTANTS_API_KEY}"
-    #  baseURL: "https://api.openai.com/v1/assistants/asst_ctA16bhfJAOk81LOH2sOCcG5"
-    #  models:
-    #    default:
-    #      - "gpt-4o-mini"
-    #      - "o1-mini"
-    #  fetch: true
-    #  titleConvo: true
-    #  titleModel: "gpt-4o-mini"
-    #  modelDisplayLabel: "BLUE"
+    - name: "Blue"
+      apiKey: "${ASSISTANTS_API_KEY}"
+      baseURL: "https://api.openai.com/v1/assistants/asst_ctA16bhfJAOk81LOH2sOCcG5"
+      models:
+        default:
+          - "gpt-4o-mini"
+          - "o1-mini"
+      fetch: true
+      titleConvo: true
+      titleModel: "gpt-4o-mini"
+      modelDisplayLabel: "BLUE"
       
     # groq
     # Model list: https://console.groq.com/settings/limits
