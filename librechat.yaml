@@ -5,7 +5,7 @@ cache: true
 registration:
   socialLogins: ["github", "google", "openid"]
 
-endpoints:
+# endpoints:
   # assistants:
       # disableBuilder: false
       # Use either `supportedIds` or `excludedIds` but not both
