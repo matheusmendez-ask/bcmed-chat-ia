@@ -5,22 +5,36 @@ cache: true
 registration:
   socialLogins: ["github", "google", "openid"]
 
-# endpoints:
-  # assistants:
-      # disableBuilder: false
+endpoints:
+  
+  assistants:
+      disableBuilder: false
       # Use either `supportedIds` or `excludedIds` but not both
-      # supportedIds: ["asst_ctA16bhfJAOk81LOH2sOCcG5"]
-      # pollIntervalMs: 750  # Polling interval for checking assistant updates
-      # timeoutMs: 180000  # Timeout for assistant operations
+      supportedIds: ["asst_ctA16bhfJAOk81LOH2sOCcG5"]
+      pollIntervalMs: 750  # Polling interval for checking assistant updates
+      timeoutMs: 180000  # Timeout for assistant operations
       # excludedIds: ["asst_excludedAssistantId"]
       # `privateAssistants` do not work with `supportedIds` or `excludedIds`
-      # privateAssistants: false
+      privateAssistants: false
       # (optional) Models that support retrieval, will default to latest known OpenAI models that support the feature
       # retrievalModels: ["gpt-4-turbo-preview"]
       # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
       # capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
 
   custom:
+    # BLUE Assistente
+    # - name: "Blue"
+    #  apiKey: "${ASSISTANTS_API_KEY}"
+    #  baseURL: "https://api.openai.com/v1/assistants/asst_ctA16bhfJAOk81LOH2sOCcG5"
+    #  models:
+    #    default:
+    #      - "gpt-4o-mini"
+    #      - "o1-mini"
+    #  fetch: true
+    #  titleConvo: true
+    #  titleModel: "gpt-4o-mini"
+    #  modelDisplayLabel: "BLUE"
+      
     # groq
     # Model list: https://console.groq.com/settings/limits
     - name: "groq"
@@ -86,15 +100,14 @@ registration:
       forcePrompt: false
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
-
-    # DeepSeek
-    # https://www.deepseek.com/
-    - name: "Deepseek"
-      apiKey: "${DEEPSEEK_API_KEY}"
-      baseURL: "https://api.deepseek.com/v1"
-      models:
-        default: ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"]
-        fetch: false
-      titleConvo: true
-      titleModel: "deepseek-chat"
-      modelDisplayLabel: "Deepseek"
+      
+      # Deepseek
+      - name: "Deepseek"
+        apiKey: "${sk-9e8f2f00926d48ec96e0a5256e78ad86}"
+        baseURL: "https://api.deepseek.com/v1"
+        models:
+          default: ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"]
+          fetch: false
+        titleConvo: true
+        titleModel: "deepseek-chat"
+        modelDisplayLabel: "Deepseek"
