@@ -101,13 +101,13 @@ endpoints:
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
       
-      # Deepseek
-      - name: "Deepseek"
-        apiKey: "${sk-9e8f2f00926d48ec96e0a5256e78ad86}"
-        baseURL: "https://api.deepseek.com/v1"
-        models:
-          default: ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"]
-          fetch: false
-        titleConvo: true
-        titleModel: "deepseek-chat"
-        modelDisplayLabel: "Deepseek"
+    # Deepseek
+    - name: "Deepseek"
+      apiKey: "${sk-9e8f2f00926d48ec96e0a5256e78ad86}"
+      baseURL: "https://api.deepseek.com/v1"
+      models:
+        default: ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"]
+        fetch: false
+      titleConvo: true
+      titleModel: "deepseek-chat"
+      modelDisplayLabel: "Deepseek"
