@@ -103,7 +103,7 @@ endpoints:
       
     # Deepseek
     - name: "Deepseek"
-      apiKey: "${sk-9e8f2f00926d48ec96e0a5256e78ad86}"
+      apiKey: "${DEEPSEEK_API_KEY}"
       baseURL: "https://api.deepseek.com/v1"
       models:
         default: ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"]
