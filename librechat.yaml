@@ -8,8 +8,12 @@ registration:
 endpoints:
 
   agents:
-      recursionLimit: 50
-      disableBuilder: false
+    disableBuilder: false
+    capabilities:
+      - "execute_code"
+      - "actions"
+      - "tools"
+      - "file_search"
   
   assistants:
       disableBuilder: true
