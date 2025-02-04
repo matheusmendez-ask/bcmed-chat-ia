@@ -6,9 +6,13 @@ registration:
   socialLogins: ["github", "google", "openid"]
 
 endpoints:
+
+  agents:
+      recursionLimit: 50
+      disableBuilder: false
   
   assistants:
-      disableBuilder: false
+      disableBuilder: true
       # Use either `supportedIds` or `excludedIds` but not both
       supportedIds: ["asst_ctA16bhfJAOk81LOH2sOCcG5"]
       pollIntervalMs: 750  # Polling interval for checking assistant updates
