@@ -119,3 +119,16 @@ endpoints:
       titleConvo: true
       titleModel: "deepseek-chat"
       modelDisplayLabel: "Deepseek"
+      
+    - name: 'HuggingFace'
+      apiKey: '${HUGGINGFACE_TOKEN}'
+      baseURL: 'https://api-inference.huggingface.co/v1'
+      models:
+        default: [
+          "Writer/Palmyra-Med-70B",
+        ]
+        fetch: true
+      titleConvo: true
+      titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
+      dropParams: ["top_p"]
+      modelDisplayLabel: "HuggingFace"
