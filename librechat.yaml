@@ -126,6 +126,7 @@ endpoints:
       models:
         default: [
           "Writer/Palmyra-Med-70B",
+          "ContactDoctor/Bio-Medical-Llama-3-8B-CoT-012025"
         ]
         fetch: true
       titleConvo: true
