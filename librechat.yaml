@@ -16,7 +16,7 @@ endpoints:
         - "file_search"
   
   assistants:
-      disableBuilder: true
+      disableBuilder: false
       # Use either `supportedIds` or `excludedIds` but not both
       supportedIds: ["asst_0iCDr8mYNiL8VqzEMw2FwzNf"]
       pollIntervalMs: 750  # Polling interval for checking assistant updates
